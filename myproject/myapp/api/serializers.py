@@ -27,7 +27,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ('id', 'title', 'genres', 'stars', 'description', 'created')
+        fields = "__all__"
 
 
 class CommentSerializer(serializers.ModelSerializer):
