@@ -14,7 +14,7 @@ def getRoutes(request):
     routes = [
         '',
     ]
-    return Response(request, routes)
+    return Response(routes)
 
 
 class Home(APIView):
