@@ -10,6 +10,9 @@ class Genre(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+
 
 class Movie(models.Model):
     """ The Model to hold a list of Movies """
